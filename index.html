@@ -2,122 +2,124 @@
 <html lang="en">
 
 <head>
+    <!-- Basic metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDXVIIC</title>
 
-    <!-- Local Bootstrap CSS (optional if using CDN) -->
+    <!-- Optional: Local Bootstrap CSS for fallback or development -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Custom site styles -->
     <link rel="stylesheet" href="css\style.css">
 
-    <!-- Custom CSS for outlined text -->
-
-    <!-- Bootstrap 5 CSS from CDN -->
+    <!-- Bootstrap 5 CSS from CDN (takes precedence over local if loaded after) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- jQuery (used only if you need scripting support) -->
+    <!-- jQuery for scripting (used only if needed for features like DataTables) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
-    <!-- Bootstrap JS Bundle with Popper (for dropdowns, collapses, etc.) -->
+    <!-- Bootstrap JavaScript Bundle with Popper.js for interactive components -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body class="pt-2 bg-primary-subtle"> <!-- Subtle blue page background -->
+<!-- Page background styled with Bootstrap utility class -->
 
+<body class="pt-2 bg-primary-subtle">
+
+    <!-- Main container for content -->
     <div id="main-container" class="container bg-light p-1">
+
+        <!-- Top-right search form -->
         <div class="text-end">
             <form class="d-inline-flex" role="search">
                 <input class="form-control form-control-sm me-2 border-warning" type="search"
                     placeholder="Enter search item" aria-label="Search">
-                <button class="btn btn-sm btn-outline-warning text-primary fw-bolder form-control::placeholder"
-                    type="submit">Search</button>
+                <button class="btn btn-sm btn-outline-warning text-primary fw-bolder" type="submit">Search</button>
             </form>
         </div>
 
-        <!-- Title section with image and chapter info -->
-        <div class="container bg-light-subtle text-warning outlined-text mt-4 fs-4">
-            <div class="row align-items-center g-3">
+        <!-- Title block with logo, organization name, and chapter details -->
+        <!-- Bootstrap Grid Layout for Chapter Info -->
+        <div class="container bg-light-subtle text-warning outlined-text mt-4 p-3">
+            <div class="row align-items-center g-4">
 
                 <!-- Chapter logo -->
-                <div class="col-md-2 text-center">
+                <div class="col-12 col-md-2 text-center">
                     <img src="images/NSCDXVIIC-Logo-Color-Trans.png" alt="CDXVII Logo" class="img-fluid">
                 </div>
 
-                <!-- Main organization name -->
-                <div class="col-md-2 text-left text-md-start">
-                    <h3>Colonial Dames XVII Century</h3>
+                <!-- Organization name -->
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <h3 class="mb-0">Colonial Dames XVII Century</h3>
                 </div>
 
-                <!-- Chapter name and location -->
-                <div class="col-md-4 text-left p-3">
-                    <h2>Looking Glass Chapter<br>Lansing, Michigan</h2>
+                <!-- Chapter and location -->
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <h2 class="mb-0">Looking Glass Chapter<br>Lansing, Michigan</h2>
                 </div>
-
 
             </div>
         </div>
 
 
-        <!-- Navigation Bar -->
+        <!-- Responsive navigation bar -->
         <div>
             <nav class="navbar navbar-expand-lg bg-body-secondary">
                 <div class="container-fluid">
-                    <!-- Navbar toggle button for mobile -->
+                    <!-- Toggler for collapsed nav on small screens -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <!-- Collapsible nav items -->
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav justify-content-center mx-auto mb-2 mb-lg-0 ">
-
-                            <!-- Active/Home link -->
+                    <!-- Collapsible navigation items -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav justify-content-center mx-auto mb-2 mb-lg-0">
+                            <!-- Home (active) -->
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="index.html">Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
 
-                            <!-- Contact Form link -->
+                            <!-- Join Us link -->
                             <li class="nav-item">
                                 <a class="nav-link" href="contactform.html">Join Us</a>
                             </li>
 
-                            <!-- Ancestors link -->
+                            <!-- Ancestors page link -->
                             <li class="nav-item">
                                 <a class="nav-link" href="ancestors.html">Ancestors</a>
                             </li>
 
-                            <!-- Dropdown menu -->
-                            <!-- >
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="true">
-                                        Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </!-->
-
+                            <!-- Dropdown placeholder (commented out) -->
+                            <!--
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="true">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            -->
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
 
-        <!-- Informational section about the organization -->
+        <!-- Brief statement about the society -->
         <div>
-            <p class="pt-3">The Colonial Dames XVII Century society is dedicated to historic Preservation, Education,
-                and Patriotism.</p>
+            <p class="pt-3 fs-5">
+                The Colonial Dames XVII Century society is dedicated to historic Preservation, Education,
+                and Patriotism.
+            </p>
         </div>
     </div>
 

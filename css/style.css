@@ -56,3 +56,8 @@
     /* Link color */
 
 }
+
+.dataTables_filter label {
+    font-weight: bold;
+    color: #0069C0;
+}
