@@ -1,0 +1,58 @@
+.outlined-text {
+    font-weight: bold;
+    font-size: 1.8rem;
+    -webkit-text-stroke: 1px #0069C0;
+    /* Blue outline around text */
+    text-align: center;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #0069C0;
+    color: white
+        /* Choose your own color here */
+}
+
+.table-hover>tbody>tr:hover td {
+    background-color: #581845;
+    color: white;
+    /* Choose your own color here */
+}
+
+.warning th {
+    background-color: #F6D066 !important;
+    color: #0069C0 !important;
+}
+
+/* Correct way to italicize placeholder text */
+.form-control::placeholder {
+    font-style: italic;
+}
+
+/* Base style */
+
+
+/* Hover style */
+.nav-item:hover {
+    background-color: #581845 !important;
+    /* Purply background for hover */
+}
+
+.nav-item:hover .nav-link {
+    color: white !important;
+    /* White text color for hover */
+}
+
+/* Style for the link within the li */
+.nav-link {
+    color: #0069C0 !important;
+    /* Link color */
+
+}
+
+.nav-link.active {
+    color: #0069C0;
+    font-weight: bold !important;
+    /* Link color */
+
+}

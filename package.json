@@ -1,12 +1,11 @@
 {
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^5.3.6",
     "jquery": "^3.7.1"
   },
   "name": "week03-coding-assignment",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
