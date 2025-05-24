@@ -61,3 +61,47 @@
     font-weight: bold;
     color: #0069C0;
 }
+
+.wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+}
+
+.background-text {
+    position: absolute; 
+    top: 50px; 
+    left: 50px;
+    width: 350px; 
+    height: 350px; 
+    z-index: 10;
+}
+
+.spinning-text {
+    animation: spin 30s linear infinite;
+    transform-origin: center;
+    font-weight: bold;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+text {
+    fill: #b99b5f;
+    /* gold tone */
+    font-family: Georgia, serif;
+    font-size: 21px;
+}

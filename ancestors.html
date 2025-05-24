@@ -15,6 +15,8 @@
 
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
+
+    
 </head>
 
 <body class="pt-2 bg-primary-subtle">
@@ -88,19 +90,63 @@
                                 <th>State Served</th>
                             </tr>
                         </thead>
-                         <tbody>
+                        <tbody>
                             <!-- Static data rows for ancestors -->
-                            <tr><td>Stepp</td><td>Moses</td><td>North Carolina</td></tr>
-                            <tr><td>Allen</td><td>James</td><td>Virginia</td></tr>
-                            <tr><td>Allen</td><td>John</td><td>Virginia</td></tr>
-                            <tr><td>Altizera</td><td>Emera</td><td>Virginia</td></tr>
-                            <tr><td>Anderson</td><td>James</td><td>Virginia</td></tr>
-                            <tr><td>Anderson</td><td>William</td><td>Virginia</td></tr>
-                            <tr><td>Anthony</td><td>Jacob</td><td>Pennsylvania</td></tr>
-                            <tr><td>Atkinson</td><td>Samuel</td><td>Virginia</td></tr>
-                            <tr><td>Avery</td><td>Ebenezer</td><td>Connecticut</td></tr>
-                            <tr><td>Axline</td><td>Adam</td><td>Virginia</td></tr>
-                            <tr><td>Bacon</td><td>Oliver</td><td>New Hampshire</td></tr>
+                            <tr>
+                                <td>Stepp</td>
+                                <td>Moses</td>
+                                <td>North Carolina</td>
+                            </tr>
+                            <tr>
+                                <td>Allen</td>
+                                <td>James</td>
+                                <td>Virginia</td>
+                            </tr>
+                            <tr>
+                                <td>Allen</td>
+                                <td>John</td>
+                                <td>Virginia</td>
+                            </tr>
+                            <tr>
+                                <td>Altizera</td>
+                                <td>Emera</td>
+                                <td>Virginia</td>
+                            </tr>
+                            <tr>
+                                <td>Anderson</td>
+                                <td>James</td>
+                                <td>Virginia</td>
+                            </tr>
+                            <tr>
+                                <td>Anderson</td>
+                                <td>William</td>
+                                <td>Virginia</td>
+                            </tr>
+                            <tr>
+                                <td>Anthony</td>
+                                <td>Jacob</td>
+                                <td>Pennsylvania</td>
+                            </tr>
+                            <tr>
+                                <td>Atkinson</td>
+                                <td>Samuel</td>
+                                <td>Virginia</td>
+                            </tr>
+                            <tr>
+                                <td>Avery</td>
+                                <td>Ebenezer</td>
+                                <td>Connecticut</td>
+                            </tr>
+                            <tr>
+                                <td>Axline</td>
+                                <td>Adam</td>
+                                <td>Virginia</td>
+                            </tr>
+                            <tr>
+                                <td>Bacon</td>
+                                <td>Oliver</td>
+                                <td>New Hampshire</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -121,11 +167,6 @@
                 searching: true,
                 info: true
             });
-
-            // Make only the word "Search" bold
-            const label = $('#ancestorTable_filter label');
-            const html = label.html().replace('Search:', '<strong>Search:</strong>');
-            label.html(html);
         });
     </script>
 </body>

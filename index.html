@@ -63,8 +63,6 @@
                                         <a class="nav-link" href="ancestors.html">Ancestors</a>
                                     </li>
                                 </ul>
-                                
-                                <!-- Top-right search form -->
                                 <form class="d-inline-flex" role="search">
                                     <input class="form-control form-control-sm me-2 border-warning" type="search"
                                         placeholder="Enter search item" aria-label="Search">
@@ -78,6 +76,8 @@
             </div>
         </header>
 
+
+        <!-- Top-right search form -->
 
         <!-- Title block with logo, organization name, and chapter details -->
         <!-- Bootstrap Grid Layout for Chapter Info -->
@@ -104,36 +104,69 @@
 
 
         <!-- Brief statement about the society -->
-        <div>
-            <p class="pt-3 fs-5">
-                The Colonial Dames XVII Century society is dedicated to Historic Preservation, Education,
-                and Patriotism.
+        <div class="pt-3 fs-5">
+            <p >
+                The Looking Glass Chapter is a local chapter of the National Society Colonial Dames XVII Century, a
+                society dedicated to historic preservation, education,
+                and community service.
+            </p>
+            <p >
+                Our Society is based on history and heritage. We mark and preserve historic sites to keep history alive
+                and relevant. We take pride in our historic headquarters located in the Dupont Circle
+                Historic District in Washington, D.C.
             </p>
         </div>
+
     </div>
 
-    <div class="container text-center my-4">
-        <div class="row g-3">
-            <!-- Each column: full width on xs, half on sm, third on md+ -->
+    <div class="container text-center my-4 position-relative">
+        <div class="row g-3 justify-content-center">
+
+            <!-- First image -->
             <div class="col-10 col-sm-6 col-md-4 d-flex align-items-stretch">
                 <div class="w-100 d-flex align-items-center justify-content-center p-2 bg-light">
                     <img src="images/young_adult_colonial_lady_with_bonnet.png" alt="Colonial girl" class="img-fluid">
                 </div>
             </div>
 
-            <div class="col-10 col-sm-6 col-md-4 d-flex align-items-stretch">
-                <div class="w-100 d-flex align-items-center justify-content-center p-2 bg-light">
+            <!-- Second image with centered spinning circle -->
+            <div class="col-10 col-sm-6 col-md-4 d-flex align-items-stretch position-relative">
+                <div class="w-100 d-flex align-items-center justify-content-center p-2 bg-light position-relative">
+
+                    <!-- Spinning circle centered over image -->
+                    <div class="d-none d-md-flex justify-content-center align-items-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                    width: 550px; height: 550px; z-index: 10;">
+                        <svg viewBox="0 0 300 300" style="width: 100%; height: 100%;">
+                            <defs>
+                                <path id="circlePath" d="M150,150 m-100,0 a100,100 0 1,1 200,0 a100,100 0 1,1 -200,0" />
+                            </defs>
+                            <text class="spinning-text">
+                                <textPath href="#circlePath" startOffset="0%">
+                                    · Education · Community Service · Historical Preservation ·
+                                </textPath>
+                            </text>
+                        </svg>
+                    </div>
+
+                    <!-- Actual image -->
                     <img src="images/CDXVIIC_250.png" alt="CDXVIIC 250 Pin" class="img-fluid">
                 </div>
             </div>
 
-            <div class="col-10 col-sm-6 col-md-4 d-flex align-items-stretch">
+            <!-- Third image -->
+            <div class="col-10 col-sm-6 col-md-4 d-flex align-items-stretch position-relative">
                 <div class="w-100 d-flex align-items-center justify-content-center p-2 bg-light">
                     <img src="images/boy-with-flag.png" alt="Boy with flag" class="img-fluid">
                 </div>
             </div>
         </div>
+
+
+
+
     </div>
+
+
 
     <!-- jQuery for scripting (used only if needed for features like DataTables) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
