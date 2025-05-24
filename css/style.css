@@ -51,7 +51,7 @@
 }
 
 .nav-link.active {
-    color: #0069C0;
+    color: dark orange;
     font-weight: bold !important;
     /* Link color */
 
