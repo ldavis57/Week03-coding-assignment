@@ -18,55 +18,65 @@
   <!-- Page container with background color -->
   <div class="p-3 mb-2 bg-primary-subtle">
 
-    <!-- Navbar -->
-  <header>
-  <div>
-    <div id="main-container" class="container bg-light p-1">
-      <nav class="navbar navbar-expand-lg bg-body-secondary">
-        <div class="container-fluid">
+    <!-- Responsive navigation bar -->
+    <!-- Wrapped Nav in header for easier identification and manipulation -->
+    <header>
+      <div>
+        <div id="main-container" class="container bg-light p-1">
+          <nav class="navbar navbar-expand-lg bg-body-secondary">
+            <div class="container-fluid">
 
-          <!-- Brand -->
-          <a class="navbar-brand text-warning outlined-text" href="#">CDXVIIC</a>
+              <!-- Brand -->
+              <a class="navbar-brand text-warning outlined-text" href="#">CDXVIIC</a>
 
-          <!-- ✅ Only one hamburger menu button needed -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+              <!-- Hamburger menu button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-          <!-- Collapsible nav items -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav justify-content-center mx-auto mb-2 mb-lg-0">
+              <!-- Collapsible nav items, right-aligned options when collapsed -->
+              <div class="collapse navbar-collapse justify-content-end text-end" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-center mx-auto mb-2 mb-lg-0">
 
-              <!-- Home link -->
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
+                  <!-- The active page link is bolded using css -->
+                  <!-- Home link -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
 
-              <!-- Join Us link -->
-              <li class="nav-item">
-                <a class="nav-link active" href="contactform.html">Join Us</a>
-              </li>
+                  <!-- Join Us link -->
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contactform.html">Join Us</a>
+                  </li>
 
-              <!-- Ancestors link (active) -->
-              <li class="nav-item">
-                <a class="nav-link" href="ancestors.html">Ancestors</a>
-              </li>
-            </ul>
-          </div>
+                  <!-- Ancestors link (active) -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="ancestors.html">Ancestors</a>
+                  </li>
+                </ul>
+
+                <!-- Search form -->
+                <!-- Search input and button is not yet wired to work -->
+                <form class="d-inline-flex" role="search">
+                  <input class="form-control form-control-sm me-2 border-warning" type="search"
+                    placeholder="Enter search item" aria-label="Search">
+                  <button class="btn btn-sm btn-outline-warning text-primary fw-bolder" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
-    </div>
-  </div>
-</header>
-  <!-- Informational content section -->
+      </div>
+    </header>
+    <!-- Informational content section -->
     <div class="container bg-light-subtle mt-4 fs-5 ">
-        <h1 class="mb-2 text-warning outlined-text">Join Us</h1>
-     
+      <h1 class="mb-2 text-warning outlined-text">Join Us</h1>
+
       <p>Do you have an ancestor in your family tree who lived in the 17th century and either held an office or owned
         land?</p>
-      
+
       <p>Colonial Dames XVII Century has been honoring the legacy of America's early settlers through historical
         preservation, education, and community service since 1915. With its three-part focus on historic preservation,
         education, and patriotism, the Colonial Dames XVII Century is all about service.</p>
@@ -79,7 +89,18 @@
       </p>
     </div>
 
-    <!-- Contact Form -->
+    <!-- Contact Form 
+    Form-check applies consistent spacing and layout for form controls like labels and radio buttons.
+    The form-check-input class applies Bootstrap's styling (e.g., custom appearance, spacing).0
+    Added DataTools to provide a search option for the form.
+    The form is designed to be user-friendly and accessible, with clear labels and required fields.
+    The form includes fields for first name, last name, email, phone number, best time to contact, preferred contact
+    method, relative in CDXVIIC, ancestor knowledge, and other details.
+    The form uses Bootstrap classes for styling and layout, ensuring a consistent look and feel across devices.
+    Submit button will open the default email client with a pre-filled subject line but does not include the form, 
+    itself, at this time.
+    -->
+
     <div class="container bg-light-subtle mt-4 fs-6">
       <form action="mailto:ldavis.dar@gmail.com?subject=CDXVIIC Inquiry" method="post">
 
@@ -184,4 +205,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
