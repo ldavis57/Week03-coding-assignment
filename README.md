@@ -1,4 +1,4 @@
-# Final Project
+# Front-End Project
 <div align="center">
 
   <img src="images/NSCDXVIIC-Logo-Color-Trans.png" alt="logo" width="200" height="auto" />
