@@ -43,7 +43,7 @@ Clone the project
 ### :email: Contact
 Lana Davis - davis.lanac@gmail.com
 
-:link: Project Link: https://github.com/ldavis57/Week03-coding-assignment\
+:link: Project Link: https://github.com/ldavis57/Week03-coding-assignment<br>
 :link: Visit site at https://ldavis57.github.io/Week03-coding-assignment
 
 <!-- Acknowledgments -->
