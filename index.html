@@ -5,7 +5,7 @@
     <!-- Basic metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CDXVIIC</title>
+    <title>Looking Glass Home</title>
 
     <!-- Optional: Local Bootstrap CSS for fallback or development -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
@@ -17,19 +17,59 @@
     <!-- Bootstrap 5 CSS from CDN (takes precedence over local if loaded after) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- jQuery for scripting (used only if needed for features like DataTables) -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-
-    <!-- Bootstrap JavaScript Bundle with Popper.js for interactive components -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <!-- Page background styled with Bootstrap utility class -->
 
 <body class="pt-2 bg-primary-subtle">
+    
 
     <!-- Main container for content -->
     <div id="main-container" class="container bg-light p-1">
+        
+                <!-- Responsive navigation bar -->
+<header>
+  <div>
+    <div id="main-container" class="container bg-light p-1">
+      <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+
+          <!-- Brand -->
+          <a class="navbar-brand text-warning outlined-text" href="#">CDXVIIC</a>
+
+          <!-- ✅ Only one hamburger menu button needed -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible nav items -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-center mx-auto mb-2 mb-lg-0">
+
+              <!-- Home link -->
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+
+              <!-- Join Us link -->
+              <li class="nav-item">
+                <a class="nav-link" href="contactform.html">Join Us</a>
+              </li>
+
+              <!-- Ancestors link (active) -->
+              <li class="nav-item">
+                <a class="nav-link" href="ancestors.html">Ancestors</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
 
         <!-- Top-right search form -->
         <div class="text-end">
@@ -64,65 +104,47 @@
         </div>
 
 
-        <!-- Responsive navigation bar -->
-        <div>
-            <nav class="navbar navbar-expand-lg bg-body-secondary">
-                <div class="container-fluid">
-                    <!-- Toggler for collapsed nav on small screens -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- Collapsible navigation items -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav justify-content-center mx-auto mb-2 mb-lg-0">
-                            <!-- Home (active) -->
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-
-                            <!-- Join Us link -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactform.html">Join Us</a>
-                            </li>
-
-                            <!-- Ancestors page link -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="ancestors.html">Ancestors</a>
-                            </li>
-
-                            <!-- Dropdown placeholder (commented out) -->
-                            <!--
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="true">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            -->
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
         <!-- Brief statement about the society -->
         <div>
             <p class="pt-3 fs-5">
-                The Colonial Dames XVII Century society is dedicated to historic Preservation, Education,
+                The Colonial Dames XVII Century society is dedicated to Historic Preservation, Education,
                 and Patriotism.
             </p>
         </div>
     </div>
 
+    <div class="container text-center my-4">
+        <div class="row g-3">
+            <!-- Each column: full width on xs, half on sm, third on md+ -->
+            <div class="col-10 col-sm-6 col-md-4 d-flex align-items-stretch">
+                <div class="w-100 d-flex align-items-center justify-content-center p-2 bg-light">
+                    <img src="images/young_adult_colonial_lady_with_bonnet.png" alt="Colonial girl" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-10 col-sm-6 col-md-4 d-flex align-items-stretch">
+                <div class="w-100 d-flex align-items-center justify-content-center p-2 bg-light">
+                    <img src="images/CDXVIIC_250.png" alt="CDXVIIC 250 Pin" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-10 col-sm-6 col-md-4 d-flex align-items-stretch">
+                <div class="w-100 d-flex align-items-center justify-content-center p-2 bg-light">
+                    <img src="images/boy-with-flag.png" alt="Boy with flag" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery for scripting (used only if needed for features like DataTables) -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript Bundle with Popper.js for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<footer>
+
+
+</footer>
 
 </html>

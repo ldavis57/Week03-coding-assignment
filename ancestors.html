@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
-    <title>Patriot Table</title>
+    <title>Looking Gl;ass Chapter Ancestors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap 5 CSS from CDN for responsive grid and UI components -->
@@ -13,7 +13,7 @@
     <!-- DataTables CSS for styling table with Bootstrap 5 look -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
 
-    <!-- Your custom stylesheet -->
+    <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -22,58 +22,44 @@
     <!-- Navigation Bar -->
     <header>
         <div>
-            <nav class="navbar navbar-expand-lg bg-body-secondary">
-                <div class="container-fluid">
-                    <!-- Navbar toggle button for mobile -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <div id="main-container" class="container bg-light p-1">
+                <nav class="navbar navbar-expand-lg bg-body-secondary">
+                    <div class="container-fluid">
 
-                    <!-- Collapsible nav items -->
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav justify-content-center mx-auto mb-2 mb-lg-0 ">
+                        <!-- Brand -->
+                        <a class="navbar-brand text-warning outlined-text" href="#">CDXVIIC</a>
 
-                            <!-- Active/Home link -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
+                        <!-- ✅ Only one hamburger menu button needed -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                            <!-- Contact Form link -->
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="contactform.html">Join Us</a>
-                            </li>
+                        <!-- Collapsible nav items -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav justify-content-center mx-auto mb-2 mb-lg-0">
 
-                            <!-- Ancestors link -->
-                            <li class="nav-item">
-                                <a class="nav-link active" href="ancestors.html">Ancestors</a>
-                            </li>
+                                <!-- Home link -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
 
-                            <!-- Dropdown menu -->
-                            <!-- >
-                                  <li class="nav-item dropdown">
-                                      <a class="nav-link dropdown-toggle" href="#" role="button"
-                                          data-bs-toggle="dropdown" aria-expanded="true">
-                                          Dropdown
-                                      </a>
-                                      <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="#">Action</a></li>
-                                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                                          <li>
-                                              <hr class="dropdown-divider">
-                                          </li>
-                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                      </ul>
-                                  </li>
-                              </!-->
+                                <!-- Join Us link -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactform.html">Join Us</a>
+                                </li>
 
-                        </ul>
+                                <!-- Ancestors link (active) -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="ancestors.html">Ancestors</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
-
     </header>
 
     <!-- Introduction text block -->
@@ -87,46 +73,46 @@
         </p>
     </div>
 
-<!-- Bootstrap Grid Wrapper -->
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8">
-            <!-- Responsive Table -->
-            <div class="table-responsive">
-                <table id="ancestorTable" class="table table-w table-sm table-hover table-bordered table-striped">
-                    <thead>
-                        <tr class="warning">
-                            <!-- Table column headers -->
-                            <th>Last Name</th>
-                            <th>First Name</th>
-                            <th>State Served</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Static data rows for ancestors -->
-                        <tr><td>Stepp</td><td>Moses</td><td>North Carolina</td></tr>
-                        <tr><td>Allen</td><td>James</td><td>Virginia</td></tr>
-                        <tr><td>Allen</td><td>John</td><td>Virginia</td></tr>
-                        <tr><td>Altizera</td><td>Emera</td><td>Virginia</td></tr>
-                        <tr><td>Anderson</td><td>James</td><td>Virginia</td></tr>
-                        <tr><td>Anderson</td><td>William</td><td>Virginia</td></tr>
-                        <tr><td>Anthony</td><td>Jacob</td><td>Pennsylvania</td></tr>
-                        <tr><td>Atkinson</td><td>Samuel</td><td>Virginia</td></tr>
-                        <tr><td>Avery</td><td>Ebenezer</td><td>Connecticut</td></tr>
-                        <tr><td>Axline</td><td>Adam</td><td>Virginia</td></tr>
-                        <tr><td>Bacon</td><td>Oliver</td><td>New Hampshire</td></tr>
-                    </tbody>
-                </table>
+    <!-- Bootstrap Grid Wrapper -->
+    <div class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <!-- Responsive Table Container -->
+                <div class="table-responsive">
+                    <table id="ancestorTable" class="table table-sm table-hover table-bordered table-striped">
+                        <thead>
+                            <tr class="warning">
+                                <!-- Table column headers -->
+                                <th>Last Name</th>
+                                <th>First Name</th>
+                                <th>State Served</th>
+                            </tr>
+                        </thead>
+                         <tbody>
+                            <!-- Static data rows for ancestors -->
+                            <tr><td>Stepp</td><td>Moses</td><td>North Carolina</td></tr>
+                            <tr><td>Allen</td><td>James</td><td>Virginia</td></tr>
+                            <tr><td>Allen</td><td>John</td><td>Virginia</td></tr>
+                            <tr><td>Altizera</td><td>Emera</td><td>Virginia</td></tr>
+                            <tr><td>Anderson</td><td>James</td><td>Virginia</td></tr>
+                            <tr><td>Anderson</td><td>William</td><td>Virginia</td></tr>
+                            <tr><td>Anthony</td><td>Jacob</td><td>Pennsylvania</td></tr>
+                            <tr><td>Atkinson</td><td>Samuel</td><td>Virginia</td></tr>
+                            <tr><td>Avery</td><td>Ebenezer</td><td>Connecticut</td></tr>
+                            <tr><td>Axline</td><td>Adam</td><td>Virginia</td></tr>
+                            <tr><td>Bacon</td><td>Oliver</td><td>New Hampshire</td></tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- JS Libraries for jQuery and DataTables -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- 
+
     <!-- Initialize DataTables for enhanced interactivity -->
     <script>
         $(document).ready(function () {
